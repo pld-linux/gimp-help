@@ -2,8 +2,8 @@ Summary:	Help files for the GIMP
 Summary(pl):	Pliki pomocy dla GIMP
 Name:		gimp-help-2
 Version:	0.5
-Release:	0.1
-License:	GPL
+Release:	1
+License:	FDL
 Group:		Documentation
 Source0:	ftp://ftp.gimp.org/pub/gimp/help/testing/%{name}-%{version}.tar.gz
 # Source0-md5:	4b10833a545842ee4436a75eea68fd42
@@ -13,11 +13,14 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-#The GIMP User Manual is a newly written User Manual for the GIMP.
-
-#stupid description, please don't give rel 1 without change it!
+GIMP-Help is a help system designed for use with the internal GIMP 2
+help browser, external web browser and HTML renderers, and human
+eyeballs.
 
 %description -l pl
+GIMP-Help jest systemem pomocy zaprojektowanym do u¿ytku z wewnêtrzn±
+przegl±dark± GIMP-a 2, zewnêtrznymi przegl±darkami stron www, oraz
+ludzkimi ga³kami ocznymi.
 
 %prep
 %setup -q
