@@ -19,7 +19,7 @@ eyeballs.
 
 %description -l pl
 GIMP-Help jest systemem pomocy zaprojektowanym do u¿ytku z wewnêtrzn±
-przegl±dark± GIMP-a 2, zewnêtrznymi przegl±darkami stron www, oraz
+przegl±dark± GIMP-a 2, zewnêtrznymi przegl±darkami stron WWW, oraz
 ludzkimi ga³kami ocznymi.
 
 %prep
