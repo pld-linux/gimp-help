@@ -1,6 +1,6 @@
 Summary:	Help files for the GIMP
 Summary(pl):	Pliki pomocy dla GIMP
-Name:		gimp-help-2
+Name:		gimp-help
 Version:	0.5
 Release:	1
 License:	FDL
