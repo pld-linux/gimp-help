@@ -5,7 +5,7 @@ Version:	0.5
 Release:	1
 License:	FDL
 Group:		Documentation
-Source0:	ftp://ftp.gimp.org/pub/gimp/help/testing/%{name}-%{version}.tar.gz
+Source0:	ftp://ftp.gimp.org/pub/gimp/help/testing/%{name}-2-%{version}.tar.gz
 # Source0-md5:	4b10833a545842ee4436a75eea68fd42
 URL:		http://wiki.gimp.org/gimp/GimpDocs
 Requires:	gimp >= 2.0
@@ -23,7 +23,7 @@ przegl±dark± GIMP-a 2, zewnêtrznymi przegl±darkami stron www, oraz
 ludzkimi ga³kami ocznymi.
 
 %prep
-%setup -q
+%setup -q -n %{name}-2-%{version}
 
 %build
 %configure \
