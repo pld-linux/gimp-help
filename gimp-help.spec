@@ -1,12 +1,12 @@
 Summary:	Help files for the GIMP
 Summary(pl):	Pliki pomocy dla GIMP
 Name:		gimp-help
-Version:	0.6
+Version:	0.7
 Release:	1
 License:	FDL
 Group:		Documentation
 Source0:	ftp://ftp.gimp.org/pub/gimp/help/testing/%{name}-2-%{version}.tar.gz
-# Source0-md5:	4a5f7f6f31d14977718b62b5a3d79872
+# Source0-md5:	aee429af1f99e3d1f9e23d5d4a6d3622
 URL:		http://wiki.gimp.org/gimp/GimpDocs
 Requires:	gimp >= 2.0
 BuildArch:	noarch
