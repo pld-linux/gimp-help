@@ -1,12 +1,12 @@
 Summary:	Help files for the GIMP
 Summary(pl):	Pliki pomocy dla GIMP
 Name:		gimp-help
-Version:	0.7
+Version:	0.8
 Release:	1
 License:	FDL
 Group:		Documentation
 Source0:	ftp://ftp.gimp.org/pub/gimp/help/testing/%{name}-2-%{version}.tar.gz
-# Source0-md5:	aee429af1f99e3d1f9e23d5d4a6d3622
+# Source0-md5:	2058eb88fe7a9d230bf3284546445c65
 URL:		http://wiki.gimp.org/gimp/GimpDocs
 Requires:	gimp >= 2.0
 BuildArch:	noarch
@@ -57,6 +57,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/gimp/2.0/help/images/preferences/*.png
 %lang(de) %{_datadir}/gimp/2.0/help/images/preferences/de
 %lang(fr) %{_datadir}/gimp/2.0/help/images/preferences/fr
+%lang(zh_CN) %{_datadir}/gimp/2.0/help/images/preferences/zh_CN
 %{_datadir}/gimp/2.0/help/images/tool-options
 %dir %{_datadir}/gimp/2.0/help/images/toolbox
 %{_datadir}/gimp/2.0/help/images/toolbox/*.png
@@ -66,12 +67,22 @@ rm -rf $RPM_BUILD_ROOT
 %lang(cs) %{_datadir}/gimp/2.0/help/cs
 %lang(de) %{_datadir}/gimp/2.0/help/de
 %lang(fr) %{_datadir}/gimp/2.0/help/fr
+%lang(it) %{_datadir}/gimp/2.0/help/it
+%lang(nl) %{_datadir}/gimp/2.0/help/nl
 %lang(sv) %{_datadir}/gimp/2.0/help/sv
 %lang(zh_CN) %{_datadir}/gimp/2.0/help/zh_CN
-%lang(fr) %{_datadir}/gimp/2.0/help/images/toolbox/fr
+%lang(cs) %{_datadir}/gimp/2.0/help/images/toolbox/cs
 %lang(de) %{_datadir}/gimp/2.0/help/images/toolbox/de
+%lang(it) %{_datadir}/gimp/2.0/help/images/toolbox/it
+%lang(fr) %{_datadir}/gimp/2.0/help/images/toolbox/fr
+%lang(zh_CN) %{_datadir}/gimp/2.0/help/images/toolbox/zh_CN
+%lang(cs) %{_datadir}/gimp/2.0/help/images/filters/cs
 %lang(de) %{_datadir}/gimp/2.0/help/images/filters/de
 %lang(fr) %{_datadir}/gimp/2.0/help/images/filters/fr
+%lang(cs) %{_datadir}/gimp/2.0/help/images/dialogs/cs
 %lang(de) %{_datadir}/gimp/2.0/help/images/dialogs/de
 %lang(fr) %{_datadir}/gimp/2.0/help/images/dialogs/fr
+%lang(zh_CN) %{_datadir}/gimp/2.0/help/images/dialogs/zh_CN
+%lang(cs) %{_datadir}/gimp/2.0/help/images/using/cs
 %lang(fr) %{_datadir}/gimp/2.0/help/images/using/fr
+%lang(zh_CN) %{_datadir}/gimp/2.0/help/images/using/zh_CN
