@@ -73,8 +73,8 @@ rm -rf $RPM_BUILD_ROOT
 %lang(zh_CN) %{_datadir}/gimp/2.0/help/zh_CN
 %lang(cs) %{_datadir}/gimp/2.0/help/images/toolbox/cs
 %lang(de) %{_datadir}/gimp/2.0/help/images/toolbox/de
-%lang(it) %{_datadir}/gimp/2.0/help/images/toolbox/it
 %lang(fr) %{_datadir}/gimp/2.0/help/images/toolbox/fr
+%lang(it) %{_datadir}/gimp/2.0/help/images/toolbox/it
 %lang(zh_CN) %{_datadir}/gimp/2.0/help/images/toolbox/zh_CN
 %lang(cs) %{_datadir}/gimp/2.0/help/images/filters/cs
 %lang(de) %{_datadir}/gimp/2.0/help/images/filters/de
