@@ -41,6 +41,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc AUTHORS ChangeLog HACKING NEWS README TERMINOLOGY TODO
 %dir %{_datadir}/gimp/2.0/help
 %dir %{_datadir}/gimp/2.0/help/images
 %{_datadir}/gimp/2.0/help/images/*.png
