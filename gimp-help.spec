@@ -1,12 +1,12 @@
 Summary:	Help files for the GIMP
 Summary(pl):	Pliki pomocy dla GIMP
 Name:		gimp-help
-Version:	0.8
+Version:	0.9
 Release:	1
 License:	FDL
 Group:		Documentation
 Source0:	ftp://ftp.gimp.org/pub/gimp/help/testing/%{name}-2-%{version}.tar.gz
-# Source0-md5:	2058eb88fe7a9d230bf3284546445c65
+# Source0-md5:	c2f5c20cc5d861e7d403dda8e46d1c97
 URL:		http://wiki.gimp.org/gimp/GimpDocs
 Requires:	gimp >= 2.0
 BuildArch:	noarch
@@ -79,9 +79,11 @@ rm -rf $RPM_BUILD_ROOT
 %lang(cs) %{_datadir}/gimp/2.0/help/images/filters/cs
 %lang(de) %{_datadir}/gimp/2.0/help/images/filters/de
 %lang(fr) %{_datadir}/gimp/2.0/help/images/filters/fr
+%lang(zh_CN) %{_datadir}/gimp/2.0/help/images/filters/zh_CN
 %lang(cs) %{_datadir}/gimp/2.0/help/images/dialogs/cs
 %lang(de) %{_datadir}/gimp/2.0/help/images/dialogs/de
 %lang(fr) %{_datadir}/gimp/2.0/help/images/dialogs/fr
+%lang(it) %{_datadir}/gimp/2.0/help/images/dialogs/it
 %lang(zh_CN) %{_datadir}/gimp/2.0/help/images/dialogs/zh_CN
 %lang(cs) %{_datadir}/gimp/2.0/help/images/using/cs
 %lang(fr) %{_datadir}/gimp/2.0/help/images/using/fr
