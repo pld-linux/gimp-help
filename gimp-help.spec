@@ -1,13 +1,15 @@
 Summary:	Help files for the GIMP
 Summary(pl):	Pliki pomocy dla GIMP
 Name:		gimp-help
-Version:	0.9
+Version:	0.10
 Release:	1
 License:	FDL
 Group:		Documentation
-Source0:	ftp://ftp.gimp.org/pub/gimp/help/testing/%{name}-2-%{version}.tar.gz
-# Source0-md5:	c2f5c20cc5d861e7d403dda8e46d1c97
+Source0:	ftp://ftp.gimp.org/pub/gimp/help/%{name}-2-%{version}.tar.gz
+# Source0-md5:	22a1e10c314c5547fe8721c4f6f0b30a
 URL:		http://wiki.gimp.org/gimp/GimpDocs
+BuildRequires:	docbook-dtd43-xml
+BuildRequires:	xhtml-dtd10-xml
 Requires:	gimp >= 2.0
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -64,10 +66,12 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/gimp/2.0/help/images/toolbox/*.png
 %dir %{_datadir}/gimp/2.0/help/images/using
 %{_datadir}/gimp/2.0/help/images/using/*.png
+%{_datadir}/gimp/2.0/help/images/math
 %{_datadir}/gimp/2.0/help/en
 %lang(cs) %{_datadir}/gimp/2.0/help/cs
 %lang(de) %{_datadir}/gimp/2.0/help/de
 %lang(fr) %{_datadir}/gimp/2.0/help/fr
+%lang(hr) %{_datadir}/gimp/2.0/help/hr
 %lang(it) %{_datadir}/gimp/2.0/help/it
 %lang(nl) %{_datadir}/gimp/2.0/help/nl
 %lang(sv) %{_datadir}/gimp/2.0/help/sv
@@ -80,12 +84,17 @@ rm -rf $RPM_BUILD_ROOT
 %lang(cs) %{_datadir}/gimp/2.0/help/images/filters/cs
 %lang(de) %{_datadir}/gimp/2.0/help/images/filters/de
 %lang(fr) %{_datadir}/gimp/2.0/help/images/filters/fr
+%lang(it) %{_datadir}/gimp/2.0/help/images/filters/it
 %lang(zh_CN) %{_datadir}/gimp/2.0/help/images/filters/zh_CN
 %lang(cs) %{_datadir}/gimp/2.0/help/images/dialogs/cs
 %lang(de) %{_datadir}/gimp/2.0/help/images/dialogs/de
 %lang(fr) %{_datadir}/gimp/2.0/help/images/dialogs/fr
 %lang(it) %{_datadir}/gimp/2.0/help/images/dialogs/it
 %lang(zh_CN) %{_datadir}/gimp/2.0/help/images/dialogs/zh_CN
+%lang(nl) %{_datadir}/gimp/2.0/help/images/preferences/nl
 %lang(cs) %{_datadir}/gimp/2.0/help/images/using/cs
+%lang(de) %{_datadir}/gimp/2.0/help/images/using/de
 %lang(fr) %{_datadir}/gimp/2.0/help/images/using/fr
+%lang(hr) %{_datadir}/gimp/2.0/help/images/using/hr
+%lang(nl) %{_datadir}/gimp/2.0/help/images/using/nl
 %lang(zh_CN) %{_datadir}/gimp/2.0/help/images/using/zh_CN
