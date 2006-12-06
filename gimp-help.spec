@@ -1,5 +1,5 @@
 Summary:	Help files for the GIMP
-Summary(pl):	Pliki pomocy dla GIMP
+Summary(pl):	Pliki pomocy dla GIMP-a
 Name:		gimp-help
 Version:	0.11
 Release:	1
@@ -75,8 +75,8 @@ rm -rf $RPM_BUILD_ROOT
 %lang(hr) %{_datadir}/gimp/2.0/help/hr
 %lang(it) %{_datadir}/gimp/2.0/help/it
 %lang(ko) %{_datadir}/gimp/2.0/help/ko
+%lang(nb) %{_datadir}/gimp/2.0/help/no
 %lang(nl) %{_datadir}/gimp/2.0/help/nl
-%lang(no) %{_datadir}/gimp/2.0/help/no
 %lang(sv) %{_datadir}/gimp/2.0/help/sv
 %lang(ru) %{_datadir}/gimp/2.0/help/ru
 %lang(zh_CN) %{_datadir}/gimp/2.0/help/zh_CN
@@ -101,8 +101,8 @@ rm -rf $RPM_BUILD_ROOT
 %lang(fr) %{_datadir}/gimp/2.0/help/images/dialogs/fr
 %lang(it) %{_datadir}/gimp/2.0/help/images/dialogs/it
 %lang(ko) %{_datadir}/gimp/2.0/help/images/dialogs/ko
+%lang(nb) %{_datadir}/gimp/2.0/help/images/dialogs/no
 %lang(nl) %{_datadir}/gimp/2.0/help/images/dialogs/nl
-%lang(no) %{_datadir}/gimp/2.0/help/images/dialogs/no
 %lang(ru) %{_datadir}/gimp/2.0/help/images/dialogs/ru
 %lang(zh_CN) %{_datadir}/gimp/2.0/help/images/dialogs/zh_CN
 %lang(it) %{_datadir}/gimp/2.0/help/images/preferences/it
@@ -115,7 +115,7 @@ rm -rf $RPM_BUILD_ROOT
 %lang(hr) %{_datadir}/gimp/2.0/help/images/using/hr
 %lang(it) %{_datadir}/gimp/2.0/help/images/using/it
 %lang(ko) %{_datadir}/gimp/2.0/help/images/using/ko
+%lang(nb) %{_datadir}/gimp/2.0/help/images/using/no
 %lang(nl) %{_datadir}/gimp/2.0/help/images/using/nl
-%lang(no) %{_datadir}/gimp/2.0/help/images/using/no
 %lang(ru) %{_datadir}/gimp/2.0/help/images/using/ru
 %lang(zh_CN) %{_datadir}/gimp/2.0/help/images/using/zh_CN
