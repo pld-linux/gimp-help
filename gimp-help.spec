@@ -1,5 +1,5 @@
 Summary:	Help files for the GIMP
-Summary(pl):	Pliki pomocy dla GIMP-a
+Summary(pl.UTF-8):   Pliki pomocy dla GIMP-a
 Name:		gimp-help
 Version:	0.11
 Release:	1
@@ -19,10 +19,10 @@ GIMP-Help is a help system designed for use with the internal GIMP 2
 help browser, external web browser and HTML renderers, and human
 eyeballs.
 
-%description -l pl
-GIMP-Help jest systemem pomocy zaprojektowanym do u¿ytku z wewnêtrzn±
-przegl±dark± GIMP-a 2, zewnêtrznymi przegl±darkami stron WWW, oraz
-ludzkimi ga³kami ocznymi.
+%description -l pl.UTF-8
+GIMP-Help jest systemem pomocy zaprojektowanym do uÅ¼ytku z wewnÄ™trznÄ…
+przeglÄ…darkÄ… GIMP-a 2, zewnÄ™trznymi przeglÄ…darkami stron WWW, oraz
+ludzkimi gaÅ‚kami ocznymi.
 
 %prep
 %setup -q -n %{name}-2-%{version}
