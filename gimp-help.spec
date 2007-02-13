@@ -1,5 +1,5 @@
 Summary:	Help files for the GIMP
-Summary(pl.UTF-8):   Pliki pomocy dla GIMP-a
+Summary(pl.UTF-8):	Pliki pomocy dla GIMP-a
 Name:		gimp-help
 Version:	0.11
 Release:	1
