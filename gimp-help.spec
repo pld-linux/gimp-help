@@ -1,12 +1,12 @@
 Summary:	Help files for the GIMP
 Summary(pl.UTF-8):	Pliki pomocy dla GIMP-a
 Name:		gimp-help
-Version:	0.11
+Version:	0.12
 Release:	1
 License:	FDL
 Group:		Documentation
 Source0:	ftp://ftp.gimp.org/pub/gimp/help/%{name}-2-%{version}.tar.gz
-# Source0-md5:	1becf4914fe51d8f0ce4142202c8cb92
+# Source0-md5:	fc1e2153eafa04fa701b23818029c3e1
 URL:		http://wiki.gimp.org/gimp/GimpDocs
 BuildRequires:	docbook-dtd43-xml
 BuildRequires:	xhtml-dtd10-xml
@@ -43,7 +43,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS ChangeLog HACKING NEWS README TERMINOLOGY TODO
+%doc AUTHORS ChangeLog HACKING NEWS README TERMINOLOGY
 %dir %{_datadir}/gimp/2.0/help
 %dir %{_datadir}/gimp/2.0/help/images
 %{_datadir}/gimp/2.0/help/images/*.png
@@ -66,6 +66,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/gimp/2.0/help/images/toolbox/*.png
 %dir %{_datadir}/gimp/2.0/help/images/using
 %{_datadir}/gimp/2.0/help/images/using/*.png
+%{_datadir}/gimp/2.0/help/images/using/*.jpg
 %{_datadir}/gimp/2.0/help/images/math
 %{_datadir}/gimp/2.0/help/en
 %lang(cs) %{_datadir}/gimp/2.0/help/cs
