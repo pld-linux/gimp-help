@@ -1,12 +1,12 @@
 Summary:	Help files for the GIMP
 Summary(pl.UTF-8):	Pliki pomocy dla GIMP-a
 Name:		gimp-help
-Version:	0.12
+Version:	0.13
 Release:	1
 License:	FDL
 Group:		Documentation
 Source0:	ftp://ftp.gimp.org/pub/gimp/help/%{name}-2-%{version}.tar.gz
-# Source0-md5:	fc1e2153eafa04fa701b23818029c3e1
+# Source0-md5:	a0d3ab0e503cacaaaa031958bfad43e5
 URL:		http://wiki.gimp.org/gimp/GimpDocs
 BuildRequires:	docbook-dtd43-xml
 BuildRequires:	xhtml-dtd10-xml
@@ -38,6 +38,10 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
+mv -f $RPM_BUILD_ROOT%{_datadir}/gimp/2.0/help/images/filters/{no,nb}
+mv -f $RPM_BUILD_ROOT%{_datadir}/gimp/2.0/help/images/preferences/{no,nb}
+mv -f $RPM_BUILD_ROOT%{_datadir}/gimp/2.0/help/images/tutorials/{no,nb}
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -52,6 +56,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/gimp/2.0/help/images/dialogs/*.png
 %{_datadir}/gimp/2.0/help/images/dialogs/examples
 %dir %{_datadir}/gimp/2.0/help/images/filters
+%{_datadir}/gimp/2.0/help/images/filters/*.gif
 %{_datadir}/gimp/2.0/help/images/filters/*.png
 %{_datadir}/gimp/2.0/help/images/filters/examples
 %{_datadir}/gimp/2.0/help/images/glossary
@@ -64,9 +69,12 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/gimp/2.0/help/images/tool-options
 %dir %{_datadir}/gimp/2.0/help/images/toolbox
 %{_datadir}/gimp/2.0/help/images/toolbox/*.png
+%dir %{_datadir}/gimp/2.0/help/images/tutorials
+%{_datadir}/gimp/2.0/help/images/tutorials/*.jpg
+%{_datadir}/gimp/2.0/help/images/tutorials/*.png
 %dir %{_datadir}/gimp/2.0/help/images/using
-%{_datadir}/gimp/2.0/help/images/using/*.png
 %{_datadir}/gimp/2.0/help/images/using/*.jpg
+%{_datadir}/gimp/2.0/help/images/using/*.png
 %{_datadir}/gimp/2.0/help/images/math
 %{_datadir}/gimp/2.0/help/en
 %lang(cs) %{_datadir}/gimp/2.0/help/cs
@@ -95,6 +103,7 @@ rm -rf $RPM_BUILD_ROOT
 %lang(es) %{_datadir}/gimp/2.0/help/images/filters/es
 %lang(fr) %{_datadir}/gimp/2.0/help/images/filters/fr
 %lang(it) %{_datadir}/gimp/2.0/help/images/filters/it
+%lang(nb) %{_datadir}/gimp/2.0/help/images/filters/nb
 %lang(zh_CN) %{_datadir}/gimp/2.0/help/images/filters/zh_CN
 %lang(cs) %{_datadir}/gimp/2.0/help/images/dialogs/cs
 %lang(de) %{_datadir}/gimp/2.0/help/images/dialogs/de
@@ -106,9 +115,12 @@ rm -rf $RPM_BUILD_ROOT
 %lang(nl) %{_datadir}/gimp/2.0/help/images/dialogs/nl
 %lang(ru) %{_datadir}/gimp/2.0/help/images/dialogs/ru
 %lang(zh_CN) %{_datadir}/gimp/2.0/help/images/dialogs/zh_CN
+%lang(es) %{_datadir}/gimp/2.0/help/images/preferences/es
 %lang(it) %{_datadir}/gimp/2.0/help/images/preferences/it
+%lang(nb) %{_datadir}/gimp/2.0/help/images/preferences/nb
 %lang(nl) %{_datadir}/gimp/2.0/help/images/preferences/nl
 %lang(ru) %{_datadir}/gimp/2.0/help/images/preferences/ru
+%lang(nb) %{_datadir}/gimp/2.0/help/images/tutorials/nb
 %lang(cs) %{_datadir}/gimp/2.0/help/images/using/cs
 %lang(de) %{_datadir}/gimp/2.0/help/images/using/de
 %lang(es) %{_datadir}/gimp/2.0/help/images/using/es
