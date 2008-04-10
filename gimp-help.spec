@@ -1,12 +1,12 @@
 Summary:	Help files for the GIMP
 Summary(pl.UTF-8):	Pliki pomocy dla GIMP-a
 Name:		gimp-help
-Version:	0.13
+Version:	2.4.1
 Release:	1
 License:	FDL
 Group:		Documentation
-Source0:	ftp://ftp.gimp.org/pub/gimp/help/%{name}-2-%{version}.tar.gz
-# Source0-md5:	a0d3ab0e503cacaaaa031958bfad43e5
+Source0:	ftp://ftp.gimp.org/pub/gimp/help/%{name}-%{version}.tar.bz2
+# Source0-md5:	da505d7532b6e14713e04b6e79a11379
 URL:		http://wiki.gimp.org/gimp/GimpDocs
 BuildRequires:	docbook-dtd43-xml
 BuildRequires:	xhtml-dtd10-xml
@@ -25,7 +25,7 @@ przeglądarką GIMP-a 2, zewnętrznymi przeglądarkami stron WWW, oraz
 ludzkimi gałkami ocznymi.
 
 %prep
-%setup -q -n %{name}-2-%{version}
+%setup -q
 
 %build
 %configure \
@@ -56,7 +56,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/gimp/2.0/help/images/dialogs/*.png
 %{_datadir}/gimp/2.0/help/images/dialogs/examples
 %dir %{_datadir}/gimp/2.0/help/images/filters
-%{_datadir}/gimp/2.0/help/images/filters/*.gif
 %{_datadir}/gimp/2.0/help/images/filters/*.png
 %{_datadir}/gimp/2.0/help/images/filters/examples
 %{_datadir}/gimp/2.0/help/images/glossary
@@ -65,7 +64,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/gimp/2.0/help/images/preferences/*.png
 %lang(de) %{_datadir}/gimp/2.0/help/images/preferences/de
 %lang(fr) %{_datadir}/gimp/2.0/help/images/preferences/fr
-%lang(zh_CN) %{_datadir}/gimp/2.0/help/images/preferences/zh_CN
 %{_datadir}/gimp/2.0/help/images/tool-options
 %dir %{_datadir}/gimp/2.0/help/images/toolbox
 %{_datadir}/gimp/2.0/help/images/toolbox/*.png
@@ -77,19 +75,16 @@ rm -rf $RPM_BUILD_ROOT
 %{_datadir}/gimp/2.0/help/images/using/*.png
 %{_datadir}/gimp/2.0/help/images/math
 %{_datadir}/gimp/2.0/help/en
-%lang(cs) %{_datadir}/gimp/2.0/help/cs
 %lang(de) %{_datadir}/gimp/2.0/help/de
 %lang(es) %{_datadir}/gimp/2.0/help/es
 %lang(fr) %{_datadir}/gimp/2.0/help/fr
-%lang(hr) %{_datadir}/gimp/2.0/help/hr
 %lang(it) %{_datadir}/gimp/2.0/help/it
 %lang(ko) %{_datadir}/gimp/2.0/help/ko
 %lang(nb) %{_datadir}/gimp/2.0/help/no
 %lang(nl) %{_datadir}/gimp/2.0/help/nl
-%lang(sv) %{_datadir}/gimp/2.0/help/sv
+%lang(pl) %{_datadir}/gimp/2.0/help/pl
 %lang(ru) %{_datadir}/gimp/2.0/help/ru
-%lang(zh_CN) %{_datadir}/gimp/2.0/help/zh_CN
-%lang(cs) %{_datadir}/gimp/2.0/help/images/toolbox/cs
+%lang(sv) %{_datadir}/gimp/2.0/help/sv
 %lang(de) %{_datadir}/gimp/2.0/help/images/toolbox/de
 %lang(es) %{_datadir}/gimp/2.0/help/images/toolbox/es
 %lang(fr) %{_datadir}/gimp/2.0/help/images/toolbox/fr
@@ -97,15 +92,11 @@ rm -rf $RPM_BUILD_ROOT
 %lang(ko) %{_datadir}/gimp/2.0/help/images/toolbox/ko
 %lang(nl) %{_datadir}/gimp/2.0/help/images/toolbox/nl
 %lang(no) %{_datadir}/gimp/2.0/help/images/toolbox/no
-%lang(zh_CN) %{_datadir}/gimp/2.0/help/images/toolbox/zh_CN
-%lang(cs) %{_datadir}/gimp/2.0/help/images/filters/cs
 %lang(de) %{_datadir}/gimp/2.0/help/images/filters/de
 %lang(es) %{_datadir}/gimp/2.0/help/images/filters/es
 %lang(fr) %{_datadir}/gimp/2.0/help/images/filters/fr
 %lang(it) %{_datadir}/gimp/2.0/help/images/filters/it
 %lang(nb) %{_datadir}/gimp/2.0/help/images/filters/nb
-%lang(zh_CN) %{_datadir}/gimp/2.0/help/images/filters/zh_CN
-%lang(cs) %{_datadir}/gimp/2.0/help/images/dialogs/cs
 %lang(de) %{_datadir}/gimp/2.0/help/images/dialogs/de
 %lang(es) %{_datadir}/gimp/2.0/help/images/dialogs/es
 %lang(fr) %{_datadir}/gimp/2.0/help/images/dialogs/fr
@@ -114,21 +105,19 @@ rm -rf $RPM_BUILD_ROOT
 %lang(nb) %{_datadir}/gimp/2.0/help/images/dialogs/no
 %lang(nl) %{_datadir}/gimp/2.0/help/images/dialogs/nl
 %lang(ru) %{_datadir}/gimp/2.0/help/images/dialogs/ru
-%lang(zh_CN) %{_datadir}/gimp/2.0/help/images/dialogs/zh_CN
 %lang(es) %{_datadir}/gimp/2.0/help/images/preferences/es
 %lang(it) %{_datadir}/gimp/2.0/help/images/preferences/it
 %lang(nb) %{_datadir}/gimp/2.0/help/images/preferences/nb
 %lang(nl) %{_datadir}/gimp/2.0/help/images/preferences/nl
 %lang(ru) %{_datadir}/gimp/2.0/help/images/preferences/ru
+%lang(fr) %{_datadir}/gimp/2.0/help/images/tutorials/fr
+%lang(it) %{_datadir}/gimp/2.0/help/images/tutorials/it
 %lang(nb) %{_datadir}/gimp/2.0/help/images/tutorials/nb
-%lang(cs) %{_datadir}/gimp/2.0/help/images/using/cs
 %lang(de) %{_datadir}/gimp/2.0/help/images/using/de
 %lang(es) %{_datadir}/gimp/2.0/help/images/using/es
 %lang(fr) %{_datadir}/gimp/2.0/help/images/using/fr
-%lang(hr) %{_datadir}/gimp/2.0/help/images/using/hr
 %lang(it) %{_datadir}/gimp/2.0/help/images/using/it
 %lang(ko) %{_datadir}/gimp/2.0/help/images/using/ko
 %lang(nb) %{_datadir}/gimp/2.0/help/images/using/no
 %lang(nl) %{_datadir}/gimp/2.0/help/images/using/nl
 %lang(ru) %{_datadir}/gimp/2.0/help/images/using/ru
-%lang(zh_CN) %{_datadir}/gimp/2.0/help/images/using/zh_CN
