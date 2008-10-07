@@ -46,15 +46,15 @@ odd = []
 
 require 'find'
 Find.find(dir) do |rpath|
-  path = rpath.sub(%r!^#{dir}!, '')
-  if FileTest.directory?(rpath) && path.length > 0 && rpath !~ %r!^\.{1,2}! && eval(reskip)
-    if path !~ %r!(/en/)|(/en$)! && path =~ %r!(/([a-z]{2})/)|(/([a-z]{2})$)!
+  path = rpath.sub(%r@^#{dir}@, '')
+  if FileTest.directory?(rpath) && path.length > 0 && rpath !~ %r@^\.{1,2}@ && eval(reskip)
+    if path !~ %r@(/en/)|(/en$)@ && path =~ %r@(/([a-z]{2})/)|(/([a-z]{2})$)@
       dirs.push "%dir %lang(#{$2}#{$4}) #{path}"
     else
       dirs.push "%dir #{path}"
     end
-  elsif FileTest.file?(rpath) && path !~ %r!usr/share/doc! 
-    if path !~ %r!/en/! && path =~ %r!/([a-z]{2})/!
+  elsif FileTest.file?(rpath) && eval(reskip) 
+    if path !~ %r@/en/@ && path =~ %r@/([a-z]{2})/@
       files.push "%lang(#{$1}) #{path}"
     else
       files.push path
