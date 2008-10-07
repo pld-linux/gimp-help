@@ -44,7 +44,7 @@ mv -f $RPM_BUILD_ROOT%{_datadir}/gimp/2.0/help/images/filters/{no,nb}
 mv -f $RPM_BUILD_ROOT%{_datadir}/gimp/2.0/help/images/preferences/{no,nb}
 mv -f $RPM_BUILD_ROOT%{_datadir}/gimp/2.0/help/images/tutorials/{no,nb}
 
-%{__ruby} %{SOURCE1} -p %{_datadir}/gimp/2.0 -p %{_defaultdocdir} > %{name}.lang
+%{__ruby} %{SOURCE1} -p %{_datadir}/gimp/2.0 -p %{_defaultdocdir} -s %{_defaultdocdir}/\.+ > %{name}.lang
 
 %clean
 rm -rf $RPM_BUILD_ROOT
