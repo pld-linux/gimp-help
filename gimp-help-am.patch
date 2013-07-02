@@ -1,0 +1,32 @@
+--- gimp-help-2.8.0/quickreference/Makefile.am.orig	2012-05-22 07:13:58.000000000 +0200
++++ gimp-help-2.8.0/quickreference/Makefile.am	2012-07-02 19:23:52.543625677 +0200
+@@ -36,17 +36,17 @@
+ 	$(TEMPLATES)
+ 
+ xml/gimp-keys-%.xml: po/%.po gimp-keys.xml
+-	$(mkdir_p) xml
++	$(MKDIR_P) xml
+ 	$(XML2PO) -p $< $(srcdir)/gimp-keys.xml > $@
+ 
+ # English is a special case
+ #
+ xml/gimp-keys-en.xml: po/gimp-keys.pot gimp-keys.xml
+-	$(mkdir_p) xml
++	$(MKDIR_P) xml
+ 	$(XML2PO) -p $< $(srcdir)/gimp-keys.xml > $@
+ 
+ svg/gimp-keys-%.svg: xml/gimp-keys-%.xml stylesheets/keys-svg.xsl
+-	$(mkdir_p) svg
++	$(MKDIR_P) svg
+ 	$(XSLTPROC) \
+ 	  $(srcdir)/stylesheets/keys-svg.xsl \
+ 	  $< \
+@@ -55,7 +55,7 @@
+ svg: $(foreach lang,$(QUICKREFERENCE_LINGUAS),svg/gimp-keys-$(lang).svg)
+ 
+ docbook/gimp-keys-%.xml: xml/gimp-keys-%.xml stylesheets/keys-docbook.xsl
+-	$(mkdir_p) docbook
++	$(MKDIR_P) docbook
+ 	$(XSLTPROC) \
+ 	  $(srcdir)/stylesheets/keys-docbook.xsl \
+ 	  $< \
