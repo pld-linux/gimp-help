@@ -2,16 +2,15 @@
 Summary:	Help files for the GIMP
 Summary(pl.UTF-8):	Pliki pomocy dla GIMP-a
 Name:		gimp-help
-Version:	2.8.0
+Version:	2.8.1
 Release:	1
 License:	FDL
 Group:		Documentation
 Source0:	ftp://ftp.gimp.org/pub/gimp/help/%{name}-%{version}.tar.bz2
-# Source0-md5:	d6e07a569fe4b3bb11aaf5630da2693b
+# Source0-md5:	7f48c64bcadab9611ce8d3d89d990bb4
 Source1:	%{name}-lang-files.rb
-Patch0:		%{name}-am.patch
+Patch0:		%{name}-missing.patch
 Patch1:		%{name}-langs.patch
-Patch2:		%{name}-xml2po.patch
 URL:		http://wiki.gimp.org/gimp/GimpDocs
 BuildRequires:	autoconf >= 2.54
 BuildRequires:	automake >= 1.6
@@ -37,7 +36,6 @@ ludzkimi gałkami ocznymi.
 %setup -q
 %patch0 -p1
 %patch1 -p1
-%patch2 -p1
 
 %build
 %{__aclocal}

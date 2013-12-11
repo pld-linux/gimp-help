@@ -1,0 +1,23 @@
+--- gimp-help-2.8.1/stylesheets/languageVocab.xml.orig	1970-01-01 01:00:00.000000000 +0100
++++ gimp-help-2.8.1/stylesheets/languageVocab.xml	2013-12-11 16:26:23.520986830 +0100
+@@ -0,0 +1,20 @@
++<vocab>
++  <item value="de">Deutsch</item>
++  <item value="en">English</item>
++  <item value="en_GB">British</item>
++  <item value="fr">Français</item>
++  <item value="it">Italiano</item>
++  <item value="ja">日本語(Japanese)</item>
++  <item value="nl">Nederlands</item>
++  <item value="es">Español</item>
++  <item value="ko">한국어(Korean)</item>
++  <item value="nn">Norwegian</item>
++  <item value="ru">Pусский</item>
++  <item value="el">Ελληνικά</item>
++  <item value="pt_BR">Português</item>
++  <item value="ca">Català</item>
++  <item value="da">Dansk</item>
++  <item value="sl">Slovenščina</item>
++  <item value="sv">Svenska</item>
++  <item value="zh_CN">中文</item>
++</vocab>
