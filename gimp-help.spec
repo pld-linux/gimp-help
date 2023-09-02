@@ -1,20 +1,26 @@
-# NOTE: python xml2po crashes with memory fault inside libxml2mod on two files from Greek (el) translation
+# NOTE: xsltproc consumes lots of memory
 Summary:	Help files for the GIMP
 Summary(pl.UTF-8):	Pliki pomocy dla GIMP-a
 Name:		gimp-help
-Version:	2.8.1
+Version:	2.10.34
 Release:	1
 License:	FDL
 Group:		Documentation
-Source0:	ftp://ftp.gimp.org/pub/gimp/help/%{name}-%{version}.tar.bz2
-# Source0-md5:	7f48c64bcadab9611ce8d3d89d990bb4
+Source0:	https://download.gimp.org/pub/gimp/help/%{name}-%{version}.tar.bz2
+# Source0-md5:	5e393d61c802e73ffe6c550759ed0853
 Source1:	%{name}-lang-files.rb
-Patch0:		%{name}-missing.patch
-Patch1:		%{name}-langs.patch
-URL:		http://wiki.gimp.org/gimp/GimpDocs
+URL:		https://docs.gimp.org/
 BuildRequires:	autoconf >= 2.54
-BuildRequires:	automake >= 1.6
+BuildRequires:	automake >= 1:1.10
+BuildRequires:	dblatex
 BuildRequires:	docbook-dtd43-xml
+BuildRequires:	gettext-tools
+BuildRequires:	intltool
+BuildRequires:	librsvg
+BuildRequires:	libxml2-progs >= 2
+BuildRequires:	libxslt-progs
+BuildRequires:	python3 >= 1:3.6.0
+BuildRequires:	python3-libxml2
 BuildRequires:	ruby
 BuildRequires:	sed >= 4.0
 BuildRequires:	xhtml-dtd10-xml
@@ -34,8 +40,6 @@ ludzkimi gałkami ocznymi.
 
 %prep
 %setup -q
-%patch0 -p1
-%patch1 -p1
 
 %build
 %{__aclocal}
@@ -65,4 +69,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc AUTHORS ChangeLog HACKING NEWS README TERMINOLOGY
+%doc AUTHORS ChangeLog MAINTAINERS NEWS README TERMINOLOGY
