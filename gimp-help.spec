@@ -50,8 +50,10 @@ ludzkimi gałkami ocznymi.
 \
 ' Makefile.in
 %configure \
+%ifnarch x32
 	--host=%{_host} \
 	--build=%{_host} \
+%endif
 	--without-gimp
 %{__make} -j1 all
 
