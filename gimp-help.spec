@@ -447,7 +447,7 @@ Ten pakiet dostarcza pliki podręcznika GIMP-a w języku chińskim.
 %setup -q
 
 %build
-%{__aclocal}
+%{__aclocal} -Im4macros
 %{__autoconf}
 %{__automake}
 # see autogen.sh
