@@ -10,9 +10,11 @@ Source0:	https://download.gimp.org/pub/gimp/help/%{name}-%{version}.tar.bz2
 # Source0-md5:	a9afbeea7d55bb8655f91e2b0ca1d7a8
 URL:		https://docs.gimp.org/
 BuildRequires:	autoconf >= 2.54
-BuildRequires:	automake >= 1:1.10
+BuildRequires:	automake >= 1:1.16
 BuildRequires:	dblatex
 BuildRequires:	docbook-dtd43-xml
+BuildRequires:	docbook-dtd45-xml
+BuildRequires:	docbook-style-xsl-nons
 BuildRequires:	gettext-tools
 BuildRequires:	intltool
 BuildRequires:	librsvg
@@ -20,6 +22,7 @@ BuildRequires:	libxml2-progs >= 2
 BuildRequires:	libxslt-progs
 BuildRequires:	python3 >= 1:3.6.0
 BuildRequires:	python3-libxml2
+BuildRequires:	python3-modules >= 1:3.6.0
 BuildRequires:	ruby
 BuildRequires:	sed >= 4.0
 BuildRequires:	xhtml-dtd10-xml
