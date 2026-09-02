@@ -2,12 +2,12 @@
 Summary:	Help files for the GIMP
 Summary(pl.UTF-8):	Pliki pomocy dla GIMP-a
 Name:		gimp-help
-Version:	3.0.2
+Version:	3.2.0
 Release:	1
 License:	FDL
 Group:		Documentation
 Source0:	https://download.gimp.org/pub/gimp/help/%{name}-%{version}.tar.bz2
-# Source0-md5:	a9afbeea7d55bb8655f91e2b0ca1d7a8
+# Source0-md5:	7c1faec31b71d8a736357850ace86765
 URL:		https://docs.gimp.org/
 BuildRequires:	autoconf >= 2.54
 BuildRequires:	automake >= 1:1.16
@@ -394,6 +394,19 @@ This package provides GIMP help files in Slovenian language.
 %description sl -l pl.UTF-8
 Ten pakiet dostarcza pliki podręcznika GIMP-a w języku słoweńskim.
 
+%package sr
+Summary:	GIMP help in Serbian language
+Summary(pl.UTF-8):	Podręcznik GIMP-a w języku serbskim
+Group:		I18n
+Requires:	%{name} = %{version}-%{release}
+BuildArch:	noarch
+
+%description sr
+This package provides GIMP help files in Serbian language.
+
+%description sr -l pl.UTF-8
+Ten pakiet dostarcza pliki podręcznika GIMP-a w języku serbskim.
+
 %package sv
 Summary:	GIMP help in Swedish language
 Summary(pl.UTF-8):	Podręcznik GIMP-a w języku szwedzkim
@@ -618,6 +631,11 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %lang(sl) %{_datadir}/gimp/3.0/help/pdf/gimp-keys-sl.pdf
 %lang(sl) %{_datadir}/gimp/3.0/help/sl
+
+%files sr
+%defattr(644,root,root,755)
+%lang(sr) %{_datadir}/gimp/3.0/help/pdf/gimp-keys-sr.pdf
+%lang(sr) %{_datadir}/gimp/3.0/help/sr
 
 %files sv
 %defattr(644,root,root,755)
