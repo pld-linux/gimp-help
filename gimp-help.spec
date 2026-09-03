@@ -199,7 +199,7 @@ Ten pakiet dostarcza pliki podręcznika GIMP-a w języku francuskim.
 
 %package hr
 Summary:	GIMP help in Croatian language
-Summary(pl.UTF-8):	Podręcznik GIMP-a w języku horwackim
+Summary(pl.UTF-8):	Podręcznik GIMP-a w języku chorwackim
 Group:		I18n
 Requires:	%{name} = %{version}-%{release}
 BuildArch:	noarch
@@ -208,7 +208,7 @@ BuildArch:	noarch
 This package provides GIMP help files in Croatian language.
 
 %description hr -l pl.UTF-8
-Ten pakiet dostarcza pliki podręcznika GIMP-a w języku horwackim.
+Ten pakiet dostarcza pliki podręcznika GIMP-a w języku chorwackim.
 
 %package hu
 Summary:	GIMP help in Hungarian language
